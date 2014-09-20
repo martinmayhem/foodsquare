@@ -1,0 +1,16 @@
+.box-image-restrictions{
+    width:      200px;
+    height:     200px;
+    padding:    0;
+    margin:     0;
+}
+
+.box-image-max-parent{
+    width:      inherit;
+    height:     inherit;
+}
+
+body{
+ margin:        0;   
+    
+}
