@@ -11,7 +11,7 @@ $(document).ready(function() {
          xLarge: 1300
 	}
 
-	var sizeOfSquareSmall = 100;
+	var sizeOfSquareSmall = 150;
 	var sizeOfSquareMedium = 150;
 	var sizeOfSquareLarge = 220;
 	var sizeOfSquareXLarge = 300;
@@ -19,7 +19,7 @@ $(document).ready(function() {
 
 
 	//Visa vilka squares som ska visas
-	for (var i = 30 ; i >= 0; i--) {
+	for (var i = 60 ; i >= 0; i--) {
 		$("#squares").append("<div class='square-" + i + "'></div>");
 
 	};
