@@ -83,22 +83,18 @@ $(document).ready(function() {
 	}
 
 
-/*
+
 	//Mouseover on foodDivs overlay
 	var squaresSelect = $('[class^="square-"]');
 	$(squaresSelect).mouseover(function(){
-		$(this).css({
-			  height: $(this).siblings().height()*2,
-			  width: $(this).siblings().width()*2
-		});
+		$(this).before("<div class='big-square'></div>");
+		($(".big-square").css("left", $(this).offset().left+ "px"));
+		($(".big-square").css("top", $(this).offset().top+ "px"));
 
 	})
 	$(squaresSelect).mouseout(function(){
-		$(this).css({
-			  height: $(this).siblings().height(),
-			  width: $(this).siblings().width()
-		});
+	$(".big-square").remove();
 	})	
-*/
+
 });
 

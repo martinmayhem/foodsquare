@@ -120,3 +120,12 @@ body{
 	background-color: blue;
 	z-index: 0;
 }
+
+.big-square{
+	width: 100px;
+	height: 100px;
+	z-index: 200;
+	border-radius: 10px;
+	position:absolute;
+	background-color: yellow;
+}
