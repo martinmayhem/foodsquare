@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+	//Scroll to the top of the page function
+	$(".top-of-page-button").on("click",function(){
+       $("html body").animate({ scrollTop: "0px" });
+    });    
+
 	$(window).scroll(function(){
 		//Making the scrollable-header-container viewable when scrolling down,
 		// and vice verse when scrolling up
@@ -7,12 +12,20 @@ $(document).ready(function() {
 		scroll = getScroll();
 		if (scroll.top > 100) {
 
-			var value = document.getElementById('scrollable-header-container');
-			value.style.top = "0px";
+			var scrollableHeader = document.getElementById('scrollable-header-container');
+			scrollableHeader.style.top = "0px";
+			/*
+			var floatingNavigator = document.getElementById('floating-navigator-bar');
+			floatingNavigator.style.top = "70px";
+			*/
 		}
 		else{
-			var value = document.getElementById('scrollable-header-container');
-			value.style.top = "-60px";
+			var scrollableHeader = document.getElementById('scrollable-header-container');
+			scrollableHeader.style.top = "-70px";
+			/*
+			var floatingNavigator = document.getElementById('floating-navigator-bar');
+			floatingNavigator.style.top = "-130px";
+			*/
 		};
 
 		function getScroll () {
@@ -25,6 +38,10 @@ $(document).ready(function() {
 	}
 
 	});
+
+
+
+
 
 
 });
