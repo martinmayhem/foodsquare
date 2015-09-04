@@ -93,7 +93,11 @@ $(document).ready(function() {
 
 	})
 	$(squaresSelect).mouseout(function(){
-	$(".big-square").remove();
+		//var isHovered = $('.big-square').is(":hover");
+		//if (isHovered == false){
+			$(".big-square").remove();
+		//}
+	
 	})	
 
 });
